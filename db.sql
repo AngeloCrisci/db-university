@@ -40,3 +40,10 @@ SELECT *
     COUNT;
 
 // Milestone 8;
+
+SELECT *
+ FROM `teachers`
+  WHERE `phone` IS NULL;
+
+
+// Milestone 9;
