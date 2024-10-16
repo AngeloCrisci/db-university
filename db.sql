@@ -54,8 +54,11 @@ INSERT INTO `students` ( degree_id, name, surname, date_of_birth, fiscal_code, e
 // Milestone 10;
 
 UPDATE `teachers`
- SET office_address = 'Pietro Rizzo in 126'
+ SET office_number = '126'
   WHERE `name` = 'Pietro'
    AND `surname` = 'Rizzo';
 
 // Milestone 11;
+
+DELETE FROM `students`
+ WHERE registration_number = 0129192;
