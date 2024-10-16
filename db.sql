@@ -47,3 +47,8 @@ SELECT *
 
 
 // Milestone 9;
+
+INSERT INTO `students` ( degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
+ VALUES ( 5, 'angelo' , 'crisci', '1995-07-14' , 'CRSNGL', '2019-02-21' , '0129192', '@gmail.com' );
+
+// Milestone 10;
