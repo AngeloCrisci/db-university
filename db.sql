@@ -52,3 +52,10 @@ INSERT INTO `students` ( degree_id, name, surname, date_of_birth, fiscal_code, e
  VALUES ( 5, 'angelo' , 'crisci', '1995-07-14' , 'CRSNGL', '2019-02-21' , '0129192', '@gmail.com' );
 
 // Milestone 10;
+
+UPDATE `teachers`
+ SET office_address = 'Pietro Rizzo in 126'
+  WHERE `name` = 'Pietro'
+   AND `surname` = 'Rizzo';
+
+// Milestone 11;
