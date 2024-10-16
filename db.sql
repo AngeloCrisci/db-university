@@ -29,3 +29,8 @@ SELECT *
  FROM `exams`
   WHERE `hour` > '14%'
    AND `date` = '20-06-20';
+  
+// Milestone 6;
+SELECT * FROM `degrees` WHERE`level` = 'magistrale';
+
+// Milestone 7;
