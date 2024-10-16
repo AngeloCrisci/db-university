@@ -34,3 +34,9 @@ SELECT *
 SELECT * FROM `degrees` WHERE`level` = 'magistrale';
 
 // Milestone 7;
+
+SELECT *
+  FROM `departments`
+    COUNT;
+
+// Milestone 8;
