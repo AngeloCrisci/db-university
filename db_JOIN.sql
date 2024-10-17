@@ -25,3 +25,23 @@ FROM courses
 JOIN course_teacher ON courses.id = course_teacher.course_id 
 JOIN teachers ON course_teacher.teacher_id = teachers.id 
 WHERE teachers.id = 44;
+
+-- Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
+SELECT students.name AS 'nome', 
+        students.surname AS 'cognome', 
+            degrees.name AS 'nome laurea', 
+                departments.name AS 'nome dipartimento' 
+FROM students 
+JOIN degrees ON students.degree_id = degrees.id 
+JOIN departments ON degrees.department_id = departments.id 
+ORDER BY students.surname ASC, students.name ASC;
+
+-- Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
+SELECT degrees.name AS 'nome laurea', 
+        courses.name AS 'nome corso', 
+            teachers.name AS 'nome insegnante', 
+                teachers.surname AS 'cognome insegnante' 
+FROM degrees
+JOIN courses ON degrees.id = courses.degree_id 
+JOIN course_teacher ON courses.id = course_teacher.course_id 
+JOIN teachers ON course_teacher.teacher_id = teachers.id;

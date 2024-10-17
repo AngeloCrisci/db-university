@@ -25,14 +25,3 @@ SELECT `department_id` AS 'dipartimento',
         FROM `degrees` 
             GROUP BY `department_id` 
                 ORDER BY 'laurea';
-
-
--- Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
-SELECT students.name AS 'nome', 
-        students.surname AS 'cognome', 
-            degrees.name AS 'nome laurea', 
-                departments.name AS 'nome dipartimento' 
-FROM students 
-JOIN degrees ON students.degree_id = degrees.id 
-JOIN departments ON degrees.department_id = departments.id 
-ORDER BY students.surname ASC, students.name ASC;
